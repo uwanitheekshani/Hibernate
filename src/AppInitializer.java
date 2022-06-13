@@ -27,7 +27,7 @@ public class AppInitializer {
         Orders o1 = new Orders();
         o1.setoId("O001");
         o1.setCustomer(c1);
-//
+
          OrderDetail od = new OrderDetail();
          od.setOrder(o1);
          od.setItem(i1);
@@ -38,10 +38,10 @@ public class AppInitializer {
 
         Transaction transaction = session.beginTransaction();
 
-    //     session.save(c1);
-     //  session.save(i1);
-      //  session.save(o1);
-        //session.save(od);
+         session.save(c1);
+         session.save(i1);
+         session.save(o1);
+         session.save(od);
 
         transaction.commit();
 
